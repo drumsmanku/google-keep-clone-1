@@ -1,0 +1,41 @@
+.note-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.note-form input,
+.note-form textarea {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.note-form input[type='color']{
+  width: 5%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+
+.note-form button {
+  width: 10%;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.note-form button:hover {
+  background-color: #45a049;
+}

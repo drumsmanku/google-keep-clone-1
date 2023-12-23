@@ -1,0 +1,53 @@
+.note {
+  display: flex;
+  flex-direction: column;
+  min-height: 100px; /* Set a minimum height for shorter notes */
+  border: 1px solid #ccc;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 10px;
+  overflow: hidden; /* Prevents content from overflowing */
+}
+.note:hover {
+  transform: scale(1.03);
+}
+
+.note h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.note p {
+  font-size: 16px;
+  overflow-wrap: break-word; /* Ensures text breaks to prevent overflow */
+  flex-grow: 1; /* Allows paragraph to fill available space */
+  margin-bottom: 10px;
+}
+
+.note-content {
+  overflow-y: auto; /* Adds scrollbar if content is too long */
+  margin-bottom: 10px; /* Added margin for space between content and buttons */
+}
+
+/* Add this class to the div wrapping the content of the note for a better structure */
+.note-content-wrapper {
+  flex-grow: 1; /* Allows this wrapper to fill the note, pushing buttons to the bottom */
+  display: flex;
+  flex-direction: column;
+}
+
+.note button{
+  width: 30%;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 1rem;
+}
